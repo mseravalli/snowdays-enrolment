@@ -4,19 +4,25 @@
 
 <c:if test="<%=(part!=null) %>">
 
-	<div>
-		<img style="width: 60px; height: 60px;" alt="photo" src="imgs/${participant.photo}" />
+	<div style="margin-top: 38px; margin-left: 45px;">
+		<img style="height: 160px; width: 124px;" alt="photo" src="imgs/${participant.photo}" />
 	</div>
 	
-	<div>
-		${participant.name } ${participant.surname } 
+	<div style="text-align: center; font-family: verdana; font-size: 15px; width: 210px; margin-top: -2px;">
+		${participant.name }
 	</div>
 	
-	<div>
-		${participant.id }
+	<div style="font-family: verdana; font-size: 15px; text-align: center; width: 210px; margin-top: 3px;">
+		${participant.surname }
 	</div>
 	
-	<div>
+	<div style="font-family: verdana; font-size: 15px; text-align: center; width: 210px; margin-top: 3px;">
+		${participant.id } - ${participant.university }
+	</div>
+	
+	
+	
+	<div style="margin-top: 300px;">
 		<a href="PrintBadge?partId=${participant.id}&prev=true">prev</a>
 		<a href="PrintBadge?partId=${participant.id}&next=true">next</a>
 	</div>
