@@ -1,0 +1,1 @@
+the system allows to enrol participants
